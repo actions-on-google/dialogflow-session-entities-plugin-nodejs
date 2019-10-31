@@ -1,0 +1,23 @@
+{
+  "name": "actions-on-google-dialogflow-session-entities-plugin",
+  "version": "1.0.0",
+  "main": "dist/src/index.js",
+  "author": "Google Inc",
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": "10"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist/",
+    "test": "npm run clean && npm run build && ava --verbose dist/test/*.js"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.12.0"
+  },
+  "devDependencies": {
+    "ava": "^2.3.0",
+    "typescript": "^3.6.2"
+  }
+}
